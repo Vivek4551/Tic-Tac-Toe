@@ -81,24 +81,19 @@ function checkGameOver() {
         gameInfo.innerText = `Winner Player - ${answer}`;
         newGameBtn.classList.add("active");
     }
-    else { 
-        // means it is tie
+
+    // If  game tied 
+    let fillCount = 0;
+    gameGrid.forEach((box) => {
+        if(box !== "")
+            fillCount++;
+    });
+
+    //  board is filled , game is tie
+    if(fillCount === 9) {
         gameInfo.innerText = "Game Tied!";
         newGameBtn.classList.add("active");
     }
-
-    // another logic for game tied 
-    // let fillCount = 0;
-    // gameGrid.forEach((box) => {
-    //     if(box !== "")
-    //         fillCount++;
-    // });
-
-    //  board is filled , game is tie
-    // if(fillCount === 9) {
-    //     gameInfo.innerText = "Game Tied!";
-    //     newGameBtn.classList.add("active");
-    // }
 
 }
 
