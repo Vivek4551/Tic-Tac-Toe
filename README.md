@@ -3,6 +3,7 @@
 Live Link :- https://vivek-tic-tac-toe.vercel.app/
 
 -> I have made this project for strengthening my Logic building in JS and DOM manipulation.
+
 -> It has a track of current playing player as well features like if game tied then new game button.
 
 ** Game Overview 
